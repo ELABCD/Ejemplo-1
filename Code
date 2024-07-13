@@ -1,0 +1,14 @@
+import random
+
+
+caracteres = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+tamaño_de_contraseña= int(input("Introduce el tamaño de tu contraseña: "))
+
+contraseña = ""
+
+for _ in range(tamaño_de_contraseña):
+    contraseña += random.choice(caracteres)
+
+#Mostrar contraseña generada
+print("Contraseña generada:", contraseña)
